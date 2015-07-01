@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang=zh-CN data-webp>
+<head><title></title>
+    <meta charset=UTF-8>
+    <meta name=viewport content="width=device-width,initial-scale=1.0,maximum-scale=1.2,user-scalable=no">
+    <meta name=format-detection content="telephone=no">
+    <link rel="stylesheet" href="http://wximg.gtimg.com/tmt/_events/20150616-game-rexuechuanqi/dist/css/style-index.css?v=1596"/>
+    <style>
+*{
+    -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+    user-selcet:none;
+}
+
+.qrcode_l, .qrcode_r{
+    padding: 0;
+    z-index: 1;
+    box-shadow: 0 0 0 1px red;
+}
+
+.qrcode {
+  margin-top: 1165px;
+  box-shadow: 0 0 0 1px green;
+  padding-top: 64px;
+}
+.qrcode_l {
+  margin-left: 43px;
+}
+
+.qrcode_r {
+  margin-left: 45px;
+}
+
+/*.point1,.point2{
+    position: absolute;
+    top: 1145px;
+    left: 42px;
+    height: 86px;
+    width: 86px;
+    box-shadow: 0 0 0 1px blue;
+      z-index: 0;
+}
+.point2{
+    left: 177px;
+}*/
+    </style>
+</head>
+<body style="background-color:#110c08">
+<div class=banner></div>
+<div class=main>
+    <div class="point1"></div>
+        <div class="point2"></div>
+
+    <div class="cover"></div>
+    <div id="iSlider-wrapper"></div>
+    <div class="bg-box">
+        <div class="bg bg-0"></div>
+        <div class="bg bg-1"></div>
+        <div class="bg bg-2"></div>
+        <div class="bg bg-3"></div>
+        <div class="bg bg-4"></div>
+    </div>
+    <a class="b b-0" href="">立即下载游戏</a> <a class="b b-1" href="http://game.weixin.qq.com/cgi-bin/read?tpl=game/w_game_player&vid=b0016akw3wb"></a>
+<div class="qrcode">
+    <img src="http://wximg.gtimg.com/tmt/_events/20150616-game-rexuechuanqi/dist/img/qrcode.jpg" alt="qrcode" class="qrcode_l"/>
+    <img src="http://wximg.gtimg.com/tmt/_events/20150616-game-rexuechuanqi/dist/img/qrcode2.jpg" alt="qrcode" class="qrcode_r"/>
+</div>
+    <div class="rules">
+        <ol>
+            <li>活动时间：2015.6.25--2015.6.28 ;</li>
+            <li>活动期间收到邀请玩家即可参与《热血传奇》内测；</li>
+            <li>此页面转发无效；</li>
+            <li>活动期间默认激活微信区内测资格，手Q区无效；</li>
+        </ol>
+    </div>
+</div>
+<script src="http://wximg.gtimg.com/tmt/_events/20150616-game-rexuechuanqi/dist/js/islider.js"></script>
+<script>
+    var list = [
+        {content: "http://wximg.gtimg.com/tmt/_events/20150616-game-rexuechuanqi/dist/img/V1.jpg"},
+        {content: "http://wximg.gtimg.com/tmt/_events/20150616-game-rexuechuanqi/dist/img/V2.jpg"},
+        {content: "http://wximg.gtimg.com/tmt/_events/20150616-game-rexuechuanqi/dist/img/V3.jpg"}
+
+    ];
+
+    var	islider = new iSlider({
+        type: 'pic',
+        data: list,
+        dom: document.getElementById("iSlider-wrapper"),
+        isLooping: true
+    });
+    islider.addBtn();
+</script>
+</body>
+</html>

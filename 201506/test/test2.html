@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	    <meta name=viewport content="width=device-width,initial-scale=1.0,maximum-scale=1.2,user-scalable=no">
+
+	<title>iOS 下微信6.2 识别二维码的问题</title>
+	<style>
+	*{
+    -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+    user-selcet:none;
+}
+.main{
+	position: relative;
+	height: 1000px;
+	width: 100%;
+
+}
+
+.text{
+	width: 70%;
+	margin: 20px auto;
+}
+.qrcode{
+	position: absolute;
+	top: 500px;
+	height: 100px;
+	width: 100%;
+	box-shadow: 0 0 0 1px green;	
+	z-index: 0;
+}
+.qrcode img{
+	height: 86px;
+	width: 86px;
+	  margin-left: -43px;
+  position: absolute;
+  left: 50%;
+  z-index: 9999;
+}
+.point{
+	height: 86px;
+	width: 86px;
+	margin-left: -43px;
+	position: absolute;
+	left: 50%;
+	top: 436px;
+	box-shadow: 0 0 0 1px blue;
+}
+	</style>
+</head>
+<body>
+	<div class="main">
+<div class="text">
+	iOS 版微信6.2 中实际可识别区域为蓝色框部分；<br>
+	点击<a href="http://devework.com/weixin-qrcode-bug.html">http://devework.com/weixin-qrcode-bug.html</a>查看详情。
+</div>
+		<div class="point"></div>
+		<div class="qrcode">
+			<img src="http://wximg.gtimg.com/tmt/_events/20150616-game-rexuechuanqi/dist/img/qrcode.jpg" alt="qrcode" class="qrcode_l">
+		</div>
+	</div>
+</body>
+</html>
