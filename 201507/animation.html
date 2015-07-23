@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pseudo-Element Animation Support</title>
+</head>
+<style>
+	@keyframes color { from,to { color:red; } }
+	@-webkit-keyframes color { from,to { color:red; } }
+	.test:before {
+		content: '([ :after，伪类]如果支持Animation 本段为红色，不支持则为绿色)';
+		color: green;
+		animation: color 1s infinite;
+		-webkit-animation: color 1s infinite;
+	}
+	.test2::before {
+		content: '([ ::after，伪元素]如果支持Animation 本段为红色，不支持则为绿色)';
+		color: green;
+		animation: color 1s infinite;
+		-webkit-animation: color 1s infinite;
+	}
+
+</style>
+<body>
+	<div class="test">
+	</div>
+	<div class="test2">
+	</div>
+</body>
+</html>
